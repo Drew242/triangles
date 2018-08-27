@@ -1,20 +1,225 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<div id="banner">
   <h1>
-    Welcome to {{ title }}!
+    {{ title }}
   </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+  <p id="by">
+    {{ by }}
+  </p>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
+<div id="triangle-grid">
+  <h2>
+    {{ gridName }}
+  </h2>
+
+  <p class="instructions">Calculate the triangle coordinates for an image with right triangles such that for a given row (A-F) 
+    and column (1-12) you can produce the layout below. Based on a scale of 60 pixels by 60 pixels</p>
+
+  <div class="buttonRow">
+    <div class="buttonBlock">
+      <h2 class="rowTitle">A</h2>
+    </div>
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('A2')"></div>
+      <div class="buttonEven" onclick="alert('A1')"></div>
+    </div>
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('A4')"></div>
+      <div class="buttonEven" onclick="alert('A3')"></div>
+    </div>
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('A6')"></div>
+      <div class="buttonEven" onclick="alert('A5')"></div>
+    </div>
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('A8')"></div>
+      <div class="buttonEven" onclick="alert('A7')"></div>
+    </div>
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('A10')"></div>
+      <div class="buttonEven" onclick="alert('A9')"></div>
+    </div>
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('A12')"></div>
+      <div class="buttonEven" onclick="alert('A11')"></div>
+    </div>
+  </div>
+
+  <div class="buttonRow">
+    <div class="buttonBlock">
+      <h2 class="rowTitle">B</h2>
+    </div>  
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('B2')"></div>
+      <div class="buttonEven" onclick="alert('B1')"></div>
+    </div>
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('B4')"></div>
+      <div class="buttonEven" onclick="alert('B3')"></div>
+    </div>
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('B6')"></div>
+      <div class="buttonEven" onclick="alert('B5')"></div>
+    </div>
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('B8')"></div>
+      <div class="buttonEven" onclick="alert('B7')"></div>
+    </div>
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('B10')"></div>
+      <div class="buttonEven" onclick="alert('B9')"></div>
+    </div>
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('B12')"></div>
+      <div class="buttonEven" onclick="alert('B11')"></div>
+    </div>
+  </div>
+
+  <div class="buttonRow">
+    <div class="buttonBlock">
+      <h2 class="rowTitle">C</h2>
+    </div> 
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('C2')"></div>
+      <div class="buttonEven" onclick="alert('C1')"></div>
+    </div>
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('C4')"></div>
+      <div class="buttonEven" onclick="alert('C3')"></div>
+    </div>
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('C6')"></div>
+      <div class="buttonEven" onclick="alert('C5')"></div>
+    </div>
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('C8')"></div>
+      <div class="buttonEven" onclick="alert('C7')"></div>
+    </div>
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('C10')"></div>
+      <div class="buttonEven" onclick="alert('C9')"></div>
+    </div>
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('C12')"></div>
+      <div class="buttonEven" onclick="alert('C11')"></div>
+    </div>
+  </div>
+
+  <div class="buttonRow">
+    <div class="buttonBlock">
+      <h2 class="rowTitle">D</h2>
+    </div> 
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('D2')"></div>
+      <div class="buttonEven" onclick="alert('D1')"></div>
+    </div>
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('D4')"></div>
+      <div class="buttonEven" onclick="alert('D3')"></div>
+    </div>
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('D6')"></div>
+      <div class="buttonEven" onclick="alert('D5')"></div>
+    </div>
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('D8')"></div>
+      <div class="buttonEven" onclick="alert('D7')"></div>
+    </div>
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('D10')"></div>
+      <div class="buttonEven" onclick="alert('D9')"></div>
+    </div>
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('D12')"></div>
+      <div class="buttonEven" onclick="alert('D11')"></div>
+    </div>
+  </div>
+
+  <div class="buttonRow">
+    <div class="buttonBlock">
+      <h2 class="rowTitle">E</h2>
+    </div> 
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('E2')"></div>
+      <div class="buttonEven" onclick="alert('E1')"></div>
+    </div>
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('E4')"></div>
+      <div class="buttonEven" onclick="alert('E3')"></div>
+    </div>
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('E6')"></div>
+      <div class="buttonEven" onclick="alert('E5')"></div>
+    </div>
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('E8')"></div>
+      <div class="buttonEven" onclick="alert('E7')"></div>
+    </div>
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('E10')"></div>
+      <div class="buttonEven" onclick="alert('E9')"></div>
+    </div>
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('E12')"></div>
+      <div class="buttonEven" onclick="alert('E11')"></div>
+    </div>
+  </div>
+
+  <div class="buttonRow">
+    <div class="buttonBlock">
+      <h2 class="rowTitle">F</h2>
+    </div> 
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('F2')"></div>
+      <div class="buttonEven" onclick="alert('F1')"></div>
+    </div>
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('F4')"></div>
+      <div class="buttonEven" onclick="alert('F3')"></div>
+    </div>
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('F6')"></div>
+      <div class="buttonEven" onclick="alert('F5')"></div>
+    </div>
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('F8')"></div>
+      <div class="buttonEven" onclick="alert('F7')"></div>
+    </div>
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('F10')"></div>
+      <div class="buttonEven" onclick="alert('F9')"></div>
+    </div>
+    <div class="buttonBlock">
+      <div class="buttonOdd" onclick="alert('F12')"></div>
+      <div class="buttonEven" onclick="alert('F11')"></div>
+    </div>
+  </div>
+
+</div>
+
+<div id="triangle-info">
+  <h2>
+    {{ infoName }}
+  </h2>
+
+  <p class="instructions">Select Triangle Based on Row & Column or by Coordinates</p>
+
+  <div id="nameSelect">
+    <select (change)="findCoordinates($event.target.selectedIndex)">
+      <option *ngFor="let triangle of triangles; index as i">{{ triangle.name }}</option>
+    </select>
+    
+    Coordinates: {{ triangleCoordinates | json }}
+  </div>
+
+  <h2>OR</h2>
+
+  <div id="verticesSelect">
+    <select (change)="findTriangle($event.target.selectedIndex)">
+      <option *ngFor="let triangle of triangles; index as i">{{ triangle.coordinates | json }}</option>
+    </select>
+
+    Triangle: {{ namedTriangle }}
+  </div>
+</div>

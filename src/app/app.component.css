@@ -1,0 +1,60 @@
+#banner {
+    text-align: center;
+    background-color: black;
+    color: #3838ff;
+    padding: 2em;
+}
+
+#by {
+    color: #ffffff;
+}
+
+.instructions {
+    margin-bottom: 5%;
+}
+
+#triangle-grid {
+    width: 40%;
+    display: inline-block;
+    text-align: center;
+    margin-left: 1%;
+}
+
+.rowTitle {
+    vertical-align: middle;
+}
+
+.buttonRow {
+    display: block;
+}
+
+.buttonBlock {
+    display: inline-block;
+    overflow: hidden;
+    height: 100px;
+    width: 100px;
+}
+
+.buttonOdd {
+    width: 200px;
+    height: 80px;
+    background-color: #0000ff;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+.buttonEven {
+    height: 100px;
+    width: 100px;
+    background-color: #0000dd;
+    position: initial;
+    margin-top: -80px;
+}
+
+#triangle-info {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin-left: 5%;
+}
