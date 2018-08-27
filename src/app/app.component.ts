@@ -16,8 +16,6 @@ export class AppComponent implements OnInit {
   infoName            = 'Info';
   triangleCoordinates;
   namedTriangle;
-  selectedName;
-  selectedCoordinates;
 
   findCoordinates(i) {
     console.log(i);
