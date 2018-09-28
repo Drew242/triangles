@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Triangle } from './triangle';
 import { triangles } from './triangles';
 import { TriangleService } from './triangle.service';
 
@@ -9,11 +10,11 @@ import { TriangleService } from './triangle.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  triangles           = triangles;
-  title               = 'Cherwell Coding Exercise';
-  by                  = 'Drew Conly';
-  gridName            = 'Triangles';
-  infoName            = 'Info';
+  triangles: Triangle[] = [];
+  title: String         = 'Cherwell Coding Exercise';
+  by: String            = 'Drew Conly';
+  gridName: String      = 'Triangles';
+  infoName: String      = 'Info';
   triangleCoordinates;
   namedTriangle;
 
@@ -30,6 +31,11 @@ export class AppComponent implements OnInit {
   constructor(private triangleService: TriangleService) { }
 
   ngOnInit() {
-    this.triangles = triangles;
+    this.triangleService.getTriangles()
+      .subscribe(data => {
+        console.log(data);
+        this.triangles = data.json();
+        console.log(this.triangles);
+    });
   }
 }

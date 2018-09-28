@@ -5,27 +5,18 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class TriangleService {
-    private baseUrl = 'http://localhost:8080/api/triangles';
-    data: any = [];
+    private baseUrl = 'http://localhost:55398/api/triangles';
 
     constructor(private http: Http) {
     }
 
-    getData() {
-      return this.http.get(`${this.baseUrl}`)
-          .map((response: Response) => response.json());
-    }
-
     getTriangles() {
-      this.getData()
-          .subscribe(data => {
-              this.data = data;
-          });
-      return this.data;
+      return this.http.get(`${this.baseUrl}`)
+          .map((response: Response) => response);
     }
 
     getTriangle(triangle_id) {
       return this.http.get(`${this.baseUrl}/${triangle_id}`)
-          .map((response: Response) => response.json());
+          .map((response: Response) => response);
     }
 }

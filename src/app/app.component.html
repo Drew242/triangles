@@ -207,7 +207,7 @@
 
   <div id="nameSelect">
     <select (change)="findCoordinates($event.target.selectedIndex)">
-      <option *ngFor="let triangle of triangles; index as i">{{ triangle.name }}</option>
+      <option *ngFor="let triangle of triangles; index as i">{{ triangle.Name }}</option>
     </select>
     
     Coordinates: {{ triangleCoordinates | json }}
@@ -217,9 +217,14 @@
 
   <div id="verticesSelect">
     <select (change)="findTriangle($event.target.selectedIndex)">
-      <option *ngFor="let triangle of triangles; index as i">{{ triangle.coordinates | json }}</option>
+      <option *ngFor="let triangle of triangles; index as i">{{ triangle.Coordinates | json }}</option>
     </select>
 
-    Triangle: {{ namedTriangle }}
+    Triangle: {{ namedTriangle | json }}
+  </div>
+
+  <div id="wtf">
+    <h2>Triangles</h2>
+    {{ triangles | json}}
   </div>
 </div>
