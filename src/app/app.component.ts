@@ -19,13 +19,19 @@ export class AppComponent implements OnInit {
   namedTriangle;
 
   findCoordinates(i) {
-    console.log(i);
-    this.triangleCoordinates = triangles[i].coordinates;
+    this.triangleService.getTriangle(i)
+      .subscribe(data => {
+        this.triangleCoordinates = data.json().Coordinates;
+      });
+    console.log(this.triangleCoordinates);
   }
 
   findTriangle(i) {
-    console.log(i);
-    this.namedTriangle = triangles[i].name;
+    this.triangleService.getTriangle(i)
+      .subscribe(data => {
+        this.namedTriangle = data.json().Name;
+      });
+      console.log(this.namedTriangle);
   }
 
   constructor(private triangleService: TriangleService) { }
